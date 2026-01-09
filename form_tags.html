@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>First Demo Of HTML</title>
+
+    <meta name="author" content="Vishwas Bhatt">
+    <meta name="keywords"
+        content="HTML, Basics of HTML, Form Elements, Textbox, Checkbox, Radiobutton, File Upload, Dropdown, Date, Time, Color, Range, Demo">
+    <meta name="description"
+        content="This is the HTML Demo which shows basic usage of all elements and attributes that we learned so far.">
+
+    <style>
+        body {
+            font-family: 'Google Sans';
+        }
+    </style>
+
+    <link rel="shortcut icon" href="graduation-cap.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>5. Form Tags</h1>
+        <a href="media_tags.html"><button>&#8592; PREVIOUS</button></a>
+        <a href="index.html"><button>HOME</button></a>
+        <a href="table_tags.html"><button>NEXT &#8594;</button></a>
+    </header>
+    <main>
+
+        <form action="test.html" method="get" enctype="text/plain" target="_blank" autocomplete="on" novalidate>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label for="name">Name : </label>
+                <input type="text" name="name" id="name" placeholder="name" minlength="10" maxlength="30"><br>
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email" placeholder="email" minlength="10" maxlength="50"
+                    spellcheck="true"><br>
+                <label for="tel">Phone No : </label>
+                <input type="tel" name="tel" id="tel" minlength="10" maxlength="10" placeholder="1234567890"
+                    spellcheck="false"><br>
+                <label for="gender">Gender : </label>
+                <input type="radio" name="gender" id="male" value="Male" checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label><br>
+                <label for="hobbies">Hobbies : </label>
+                <input type="checkbox" name="hob1" id="hobby1" value="1" checked>
+                <label for="hobby1">Coding</label>
+                <input type="checkbox" name="hob2" id="hobby2" value="2">
+                <label for="hobby2">Gaming</label><br>
+                <label for="date">Birthdate : </label>
+                <input type="date" name="date" id="date" min="2004-07-13" max="2026-01-08" step="1"><br>
+                <label for="time1">Birthtime : </label>
+                <input type="time" name="time1" id="time1" min="08:00" max="20:00" value="11:11"><br>
+                <label for="age">Age : </label>
+                <input type="range" name="age" id="age" min="18" value="21" max="50" step="2">
+                <output name="ageOut" for="sliderInput">21</output><br>
+                <label for="color">Fav. Color : </label>
+                <input type="color" name="color" id="color"><br>
+                <label for="address">Address : </label>
+                <textarea name="address" id="address" cols="30" rows="5" placeholder="address"></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>Professional Info</legend>
+                <label for="desig">Designation : </label>
+                <select name="desig" id="desig">
+                    <optgroup label="Development">
+                        <option value="11">Full Stack Dev</option>
+                        <option value="22">Web Designer</option>
+                        <option value="33">QA Executive</option>
+                    </optgroup>
+                    <optgroup label="Marketing">
+                        <option value="44">Sales Manager</option>
+                        <option value="55">Media Manager</option>
+                    </optgroup>
+                </select><br>
+                <label for="company">Company : </label>
+                <input type="text" name="company1" id="company" value="RKIT Software Pvt. Ltd." disabled><br>
+                <label for="degree">Degree : </label>
+                <input list="degree1" name="degree" id="degree" minlength="3" maxlength="30"
+                    placeholder="Bachelors or Masters">
+                <datalist id="degree1">
+                    <option value="Masters Of Computer Applications">MCA</option>
+                    <option value="Bachelors Of Technology">BTech</option>
+                </datalist><br>
+                <label for="resume">Resume : </label>
+                <input type="file" name="resume" id="resume" accept=".pdf"><br>
+                <input type="submit" value="Submit Data">
+                <input type="reset" value="Reset Data">
+            </fieldset>
+        </form>
+    </main>
+    <footer align="center">
+        <hr>
+        <small><strong>END OF THE FILE (EOF) - Created By Vishwas Bhatt</strong></small>
+        <hr>
+    </footer>
+</body>
+</html>

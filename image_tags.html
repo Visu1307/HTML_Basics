@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Tag Of HTML</title>
+
+    <meta name="author" content="Vishwas Bhatt">
+    <meta name="keywords" content="HTML, Basics of HTML, Image Tag, Attributes">
+    <meta name="description"
+        content="This is the HTML Demo which shows basic usage of image tag and attributes that we learned so far.">
+
+    <style>
+        body {
+            font-family: 'Google Sans';
+        }
+    </style>
+
+    <link rel="shortcut icon" href="graduation-cap.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>3. Image Tag</h1>
+        <a href="body_tags.html"><button>&#8592; PREVIOUS</button></a>
+        <a href="index.html"><button>HOME</button></a>
+        <a href="media_tags.html"><button>NEXT &#8594;</button></a>
+    </header>
+    <hr>
+    <main>
+        <figure>
+            <img src="./img/medium.jpg" srcset="./img/small.jpg 200w, ./img/medium.jpg 400w, ./img/large.jpg 600w" sizes="(max-width: 300px) 200w,
+                            (max-width: 600px) 400px, 600px" alt="Plant" loading="lazy" decoding="async"
+                fetchpriority="high" referrerpolicy="no-referrer" draggable="true">
+            <figcaption>Responsive Image Demo Using srcset and sizes attribute of img tag</figcaption>
+        </figure>
+    </main>
+    <footer align="center">
+        <hr>
+        <small><strong>END OF THE FILE (EOF) - Created By Vishwas Bhatt</strong></small>
+        <hr>
+    </footer>
+</body>
+
+</html>
