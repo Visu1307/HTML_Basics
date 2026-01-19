@@ -18,6 +18,10 @@
         body {
             font-family: 'Google Sans';
         }
+
+        optgroup{
+            font-weight: 900;
+        }
     </style>
 
     <link rel="shortcut icon" href="graduation-cap.png" type="image/x-icon">
@@ -69,6 +73,7 @@
                 <output name="ageOut" for="sliderInput">21</output><br>
                 <label for="color">Fav. Color : </label>
                 <input type="color" name="color" id="color"><br>
+
                 <label for="address">Address : </label>
                 <textarea name="address" id="address" cols="30" rows="5" placeholder="address"></textarea><br>
             </fieldset>
@@ -81,7 +86,7 @@
                         <option value="22">Web Designer</option>
                         <option value="33">QA Executive</option>
                     </optgroup>
-                    <optgroup label="Marketing">
+                    <optgroup label="Marketing" style="color: red;">
                         <option value="44">Sales Manager</option>
                         <option value="55">Media Manager</option>
                     </optgroup>
@@ -108,4 +113,5 @@
         <hr>
     </footer>
 </body>
+
 </html>

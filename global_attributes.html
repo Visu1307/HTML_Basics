@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>First Demo Of HTML</title>
+
+    <meta name="author" content="Vishwas Bhatt">
+    <meta name="keywords" content="HTML, Basics of HTML, Global Attributes, Demo">
+    <meta name="description"
+        content="This is the HTML Demo which shows basic usage of global attributes that we learned so far.">
+
+    <link rel="shortcut icon" href="graduation-cap.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    
+    <style>
+        body{
+            font-family: Google Sans;
+        }
+
+        ol{
+            font-size: large;
+        }
+
+        li{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #myPop{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>10. Global Attributes</h1>
+        <a href="semantics_demo.html"><button>&#8592; PREVIOUS</button></a>
+        <a href="index.html"><button>HOME</button></a>
+        <a href="vb_table.html"><button>NEXT &#8594;</button></a>
+    </header>
+    <hr>
+    <ol type="1">
+        <li>contentediatable</li>
+        <p contenteditable tabindex="1">This content can be editable.</p>
+        <li>accesskey</li>
+        <p>It allows you to interact with element showing like <u>K</u>ey so that you can do it using <kbd>Alt + Accesskey</kbd>.</p>
+        <dialog open>
+            <p>How Are You?</p>
+            <form method="dialog">
+                <button accesskey="g" tabindex="2"><u>G</u>ood</button>
+            </form>
+        </dialog>
+        <li>inert</li>
+        <p>You can't interact with this <button inert>Button</button></p>
+        <li>spellcheck</li><br>
+        <label for="spell">Spell Check Enabled : </label>
+        <input type="text" name="spell" id="spell" spellcheck="true" tabindex="3">
+        <li>autofocus</li><br>
+        <label for="focus">Auto Focus Here : </label>
+        <input type="text" name="focus" id="focus" autofocus>
+        <li>tabindex Goes To URL</li>
+        <li>translate - Allows you to provide translation facility YES/NO</li>
+        <p>Currently NO, Default YES</p>
+        <small lang="hi" translate="no">
+            <h3>चमत्कार</h3>
+        </small>
+        <li>title - You can provide title to any tag that gets shown on hovering.</li>
+        <p title="HOVERED">Demo Text</p>
+        <button title="Click Me">HELLO</button>
+        <li>popover - Allows creating and styling Popover wherever you want to display on screen.</li>
+        <button popovertarget="myPop">Show Popover</button>
+        <div popover id="myPop">
+            <h3>Miracle</h3>
+        </div>
+        <li>draggable - Makes image draggable (Default True)</li>
+        <img src="./img/medium.jpg" alt="Medium Image" draggable="false">
+        <li>dir - Allows you defining direction of your text like (Default Left-To-Right) : </li>
+        <p dir="rtl">This text is in right-to-left as dir set to rtl</p>
+        <p>Screen reader does not read it in right-to-left manner but it reads in default way of LTR.</p>
+    </ol>
+    <footer align="center">
+        <hr>
+        <small><strong>END OF THE FILE (EOF) - Created By Vishwas Bhatt</strong></small>
+        <hr>
+    </footer>
+</body>
+</html>

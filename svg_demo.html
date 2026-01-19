@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SVG Tag Of HTML</title>
+    
+    <meta name="author" content="Vishwas Bhatt">
+    <meta name="keywords" content="HTML, Basics of HTML, SVG Images, Possible Ways, Import">
+    <meta name="description"
+        content="This is the HTML Demo which shows basic usage of SVG and all ways of importing it into our page.">
+    
+    <style>
+        body {
+            font-family: 'Google Sans';
+        }
+
+        header{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .svg-bg{
+            height: 200px;
+            width: 200px;
+            background-image: url("./img/surf-svgrepo-com.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    
+    <link rel="shortcut icon" href="./img/graduation-cap.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>8. SVG Demo</h1>
+        <a href="misc_tags.html"><button>&#8592; PREVIOUS</button></a>
+        <a href="index.html"><button>HOME</button></a>
+        <a href="semantics_demo.html"><button>NEXT &#8594;</button></a>
+    </header>
+    <hr>
+    <main>
+        <h3>
+            <ol type="1">
+                <h4>Ways To Use SVG in HTML</h4>
+                <li>&lt;svg&gt; - Inline SVG </li>
+                <svg viewBox="0 0 16 16" fill="none" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9.25 3.75C9.25 4.44036 8.69036 5 8 5C7.30964 5 6.75 4.44036 6.75 3.75C6.75 3.05964 7.30964 2.5 8 2.5C8.69036 2.5 9.25 3.05964 9.25 3.75ZM12 8H9.41901L11.2047 13H9.081L8 9.97321L6.91901 13H4.79528L6.581 8H4V6H12V8Z" fill="#000000"></path> </g></svg>
+                <li> Using &lt;img&gt; tag</li>
+                <img src="./img/surf-svgrepo-com.svg" width="200px" height="200px" alt="">
+                <li>Using &lt;object&gt; tag</li>
+                <object data="./img/surf-svgrepo-com.svg" type="image/svg+xml" width="200px" height="200px"></object>
+                <li>Using &lt;embed&gt; tag</li>
+                <embed src="./img/surf-svgrepo-com.svg" type="image/svg+xml" width="200px" height="200px">
+                <li>Using &lt;iframe&gt;</li>
+                <iframe src="../p.html" sandbox="allow-forms" seamless translate="no" frameborder="1"></iframe>
+                <li>Using &lt;picture&gt; tag</li>
+                <picture>
+                    <source srcset="./img/surf-svgrepo-com.svg" width="200px" height="200px" type="image/svg+xml">
+                    <img src="./large.jpg" alt="">
+                </picture>
+                <li>Using CSS</li>
+                <div class="svg-bg"></div>
+                <li>
+                    <h2>Animated SVG</h2>
+                    <iframe src="./media/animated.svg" type="image/svg+xml+css">
+                </li>
+            </ol>
+        </h3>
+    </main>
+</body>
+</html>
