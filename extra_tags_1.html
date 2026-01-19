@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Extra Tags Part-1</title>
+
+    <meta name="author" content="Vishwas Bhatt">
+    <meta name="keywords" content="HTML, Basics of HTML, Extra Tags 1, Demo">
+    <meta name="description"
+        content="This is the HTML Demo which shows basic usage of all trainer mentioned elements and attributes that we learned so far.">
+
+    <style>
+        body {
+            font-family: 'Google Sans';
+        }
+    </style>
+
+    <link rel="shortcut icon" href="graduation-cap.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Extra Tags Part-1</h1>
+        <a href="vb_table.html"><button>&#8592; PREVIOUS</button></a>
+        <a href="index.html"><button>HOME</button></a>
+        <a href="extra_tags_2.html"><button>NEXT &#8594;</button></a>
+    </header>
+    <hr>
+    <main>
+        <ol type="1">
+            <li><b>&lt;area&gt;</b> - It can be used inside the &lt;map&gt;, To provide coords and shape in the image area.</li>
+            <img src="./img/html-css-js.png" height="400px" width="400px" usemap="#image-map" referrerpolicy="no-referrer">
+            <map name="image-map">
+                <area target="_blank" alt="HTML" title="HTML" href="https://developer.mozilla.org/docs/Web/HTML"
+                    coords="251,246,73" shape="circle">
+                <area target="_blank" alt="CSS" title="CSS" href="https://developer.mozilla.org/docs/Web/CSS"
+                    coords="107,245,73" shape="circle">
+                <area target="_blank" alt="JS" title="JS" href="https://developer.mozilla.org/docs/Web/JavaScript"
+                    coords="179,119,68" shape="circle">
+            </map>
+            <li><b>&lt;article&gt;</b> - It is semantic tag that can be used to define self-composed contents like blog posts, news articles etc.</li>
+            <article>
+                <p>Past Is History, Future Is Mystery & Today Is A Gift That's Why We Call It Present.</p>
+                <cite>-Unknown</cite>
+            </article>
+            <li><b>&lt;base&gt;</b> - It is used to provide base URL for # redirections to particular part of page.</li>
+            <base href="extra_tags_2.html">
+            <a href="#test">Go To Extra Tags Part-2 Test Section</a>
+            <li><b>&lt;bdi&gt;</b> - tells the browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text. </li>
+            <bdi>Hello</bdi> World<br>
+            <bdi>الرجل القوي إيان</bdi> F9LA <br>
+            <li><b>&lt;bdo&gt;</b> - It stands for Bi-Directional Override Element that individually treat each and every character.</li>
+            <span>LTR : </span><bdo dir="ltr">Hello World</bdo><br>
+            <span>RTL : </span><bdo dir="rtl">How Are You?</bdo>
+            <li><b>&lt;big&gt; (DEPRECATED) - It used to display fonts are greater size than it's parent like : </b></li>
+            <h3>
+                Hello
+                <big>World</big>
+            </h3>
+            <li><b>&lt;data&gt;</b> - It can be used to associate value to some text like : </li>
+            <data value="13" title="13">Vishwas</data><br>
+            <data value="39" title="39">Pranjal</data>
+            <li><b>&lt;datalist&gt;</b> - It is used to provide pre-defined suggestions that can be directly injected to text boxes.</li>
+            <label for="data">Enter Your Browser's Name : </label>
+            <input list="data" id="data_id" name="data">
+            <datalist id="data">
+                <option value="Chrome">Google</option>
+                <option value="Edge">Microsoft</option>
+                <option value="Safari">Apple</option>
+            </datalist>
+        </ol>
+    </main>
+</body>
+</html>
