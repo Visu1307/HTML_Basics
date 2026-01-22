@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>Form Task 2</title>
+</head>
+<body>
+	<form action="#" method="post" enctype="text/plain">
+	<fieldset>
+		<legend>Student's Data</legend>
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="fnm">First Name : </label>
+			<input id="fnm" type="text" maxlength="20"><br>
+			<label for="lnm">Last Name : </label>
+			<input id="lnm" type="text" maxlength="20"><br>
+			<label for="age">Age : </label>
+			<input type="number" maxlength=2 max="99"><br>
+			<label for="gen">Gender : </label>
+			<input id="male" name="gen" type="radio" value="1" checked>
+			<label for="male">Male</label>
+			<input id="female" name="gen" type="radio" value="2">
+			<label for="female">Female</label><br>
+			<label for="hob">Hobbies : </label>
+			<input id="des" name="des" type="checkbox" checked>
+			<label for="des">Designing</label>
+			<input id="cod" name="cod" type="checkbox">
+			<label for="cod">Coding</label>
+			<input id="gam" name="gam" type="checkbox">
+			<label for="gam">Gaming</label>
+		</fieldset>
+		<fieldset>
+			<legend>Contact Information</legend>
+			<label for="mob">Mobile No. : </label>
+			<input id="mob" type="number" maxlength="10"><br>
+			<label for="mail">Email ID : </label>
+			<input id="mail" type="mail" maxlength="80"><br>
+			<label for="addr">Address : </label>
+			<textarea cols="20" rows="5" resizeable="false"></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>Academics Information</legend>
+			<label for="tenth">10th Percentage : </label>
+			<input id="tenth" type="number" maxlength="2"><br>
+			<label for="stream">Select Stream : </label>
+			<select name="stream">
+				<option>Science</option>
+				<option>Commerce</option>
+				<option>Arts</option>
+			</select><br>
+			<label for="twelveth">12th Percentage : </label>
+			<input id="twelveth" type="number" maxlength="2"><br>
+			<label for="bachelors">Enter Degree Name : </label>
+			<input list="bdegree">
+			<datalist id="bdegree">
+				<option value="MCA"></option>
+				<option value="B. Tech."></option>
+				<option value="BBA"></option>
+			</datalist><br>
+			<label for="cgpa">Enter CGPA : </label>
+			<input id="cgpa" type="number" maxlength="5">
+		</fieldset>
+		<fieldset>
+			<legend>Professional Information</legend>
+			<label for="cmp">Enter Company's Name : </label>
+			<input id="cmp" type="text" value="RKIT Software Pvt. Ltd." disabled><br>
+			<label for="role">Select Your Role : </label>
+			<select>
+				<optgroup label="Development">
+					<option>Web Designer</option>
+					<option>Full Stack Dev.</option>
+				</optgroup>
+				<optgroup label="Marketing">
+					<option>Product Analyst</option>
+					<option>Sales Manager</option>
+				</optgroup>
+			</select><br>
+			<label for="jd">Joining Date : </label>
+			<input id="jd" type="date" max="2026-01-31">
+		</fieldset>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+	</fieldset>
+	</form>
+</body>
+</html>

@@ -36,10 +36,12 @@
     <hr>
     <main>
         <ol type="1" start="9">
-            <li><b>&lt;fencedframe&gt;</b> (EXPERIMENTAL) - fencedframe is just like iframe but iframe supports the external
-                interaction while fencedframe is not supporting external interactions.</li>
-            <fencedframe></fencedframe>
-            <small>JS Required</small>
+            <section id="fence">
+                <li><b>&lt;fencedframe&gt;</b> (EXPERIMENTAL) - fencedframe is just like iframe but iframe supports the external
+                    interaction while fencedframe is not supporting external interactions.</li>
+                <fencedframe></fencedframe>
+                <small>JS Required</small>
+            </section>
             <li><b>&lt;figure&gt; & &lt;figcaption&gt;</b> - figure tag is used to wrap any image along with its caption. Here figcaption in the name of that figure. </li>
             <figure>
                 <img src="./img/small.jpg" alt="small image">
@@ -47,11 +49,13 @@
                     Figure 1
                 </figcaption>
             </figure>
-            <li><b>&lt;frame&gt; & &lt;frameset&gt;</b> (DEPRECATED) - defines a particular area in which another HTML document can be displayed. A frame should be used within a &lt;frameset&gt;.</li>
-            <frameset cols="400, 500">
-                <frame src="./html_intro.html" />
-                <frame src="./body_tags.html" />
-            </frameset>
+            <section id="frame">
+                <li><b>&lt;frame&gt; & &lt;frameset&gt;</b> (DEPRECATED) - defines a particular area in which another HTML document can be displayed. A frame should be used within a &lt;frameset&gt;.</li>
+                <frameset cols="400, 500">
+                    <frame src="./html_intro.html" />
+                    <frame src="./body_tags.html" />
+                </frameset>
+            </section>
             <li><b>&lt;ins&gt;</b> - Used to show inserted content in the web page. Visual apperance is underlined text but semantic meaning is inserted text.</li>
             This is <ins>not</ins> blank text.
             <li><b>&lt;main&gt;</b> - Used to wrap main content of particular section or div or any other element.</li>
@@ -83,7 +87,20 @@
             <li><b>&lt;s&gt;</b> - It is used show striked through text like : </li>         
             <s>MRP : $10</s><br>
             <b>SLP : $9</b>
+            <section id="canvas">
+                <li><b>&lt;canvas&gt;</b> - You can draw shapes and use colors inside this tag using JavaScript.</li>
+                <canvas width="200px" height="200px">
+                </canvas>
+            </section>
         </ol>
     </main>
 </body>
+
+<script>
+    const canvas = document.querySelector("canvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "green";
+    ctx.fillRect(10, 10, 100, 100);
+</script>
+
 </html>

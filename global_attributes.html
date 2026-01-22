@@ -52,12 +52,14 @@
         <p contenteditable tabindex="1">This content can be editable.</p>
         <li>accesskey</li>
         <p>It allows you to interact with element showing like <u>K</u>ey so that you can do it using <kbd>Alt + Accesskey</kbd>.</p>
-        <dialog open>
-            <p>How Are You?</p>
-            <form method="dialog">
-                <button accesskey="g" tabindex="2"><u>G</u>ood</button>
-            </form>
-        </dialog>
+        <section id="dialog">
+            <dialog open>
+                <p>How Are You?</p>
+                <form method="dialog">
+                    <button accesskey="g" tabindex="2"><u>G</u>ood</button>
+                </form>
+            </dialog>
+        </section>
         <li>inert</li>
         <p>You can't interact with this <button inert>Button</button></p>
         <li>spellcheck</li><br>
@@ -75,11 +77,13 @@
         <li>title - You can provide title to any tag that gets shown on hovering.</li>
         <p title="HOVERED">Demo Text</p>
         <button title="Click Me">HELLO</button>
-        <li>popover - Allows creating and styling Popover wherever you want to display on screen.</li>
-        <button popovertarget="myPop">Show Popover</button>
-        <div popover id="myPop">
-            <h3>Miracle</h3>
-        </div>
+        <section id="pop">
+            <li>popover - Allows creating and styling Popover wherever you want to display on screen.</li>
+            <button popovertarget="myPop">Show Popover</button>
+            <div popover id="myPop">
+                <h3>Miracle</h3>
+            </div>
+        </section>
         <li>draggable - Makes image draggable (Default True)</li>
         <img src="../img/medium.jpg" alt="Medium Image" draggable="false">
         <li>dir - Allows you defining direction of your text like (Default Left-To-Right) : </li>

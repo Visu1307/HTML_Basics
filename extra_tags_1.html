@@ -50,31 +50,43 @@
                 <p>Past Is History, Future Is Mystery & Today Is A Gift That's Why We Call It Present.</p>
                 <cite>-Unknown</cite>
             </article>
-            <li><b>&lt;base&gt;</b> - It is used to provide base URL for # redirections to particular part of page.</li>
-            <base href="extra_tags_2.html">
-            <a href="#test">Go To Extra Tags Part-2 Test Section</a>
-            <li><b>&lt;bdi&gt;</b> - tells the browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text. </li>
-            <bdi>Hello</bdi> World<br>
-            <bdi>الرجل القوي إيان</bdi> F9LA <br>
-            <li><b>&lt;bdo&gt;</b> - It stands for Bi-Directional Override Element that individually treat each and every character.</li>
-            <span>LTR : </span><bdo dir="ltr">Hello World</bdo><br>
-            <span>RTL : </span><bdo dir="rtl">How Are You?</bdo>
-            <li><b>&lt;big&gt; (DEPRECATED) - It used to display fonts are greater size than it's parent like : </b></li>
-            <h3>
-                Hello
-                <big>World</big>
-            </h3>
-            <li><b>&lt;data&gt;</b> - It can be used to associate value to some text like : </li>
-            <data value="13" title="13">Vishwas</data><br>
-            <data value="39" title="39">Pranjal</data>
-            <li><b>&lt;datalist&gt;</b> - It is used to provide pre-defined suggestions that can be directly injected to text boxes.</li>
-            <label for="data">Enter Your Browser's Name : </label>
-            <input list="data" id="data_id" name="data">
-            <datalist id="data">
-                <option value="Chrome">Google</option>
-                <option value="Edge">Microsoft</option>
-                <option value="Safari">Apple</option>
-            </datalist>
+            <section id="base">
+                <li><b>&lt;base&gt;</b> - It is used to provide base URL for # redirections to particular part of page.</li>
+                <base href="extra_tags_2.html">
+                <a href="#test">Go To Extra Tags Part-2 Test Section</a>
+            </section>
+            <section id="bdi">
+                <li><b>&lt;bdi&gt;</b> - tells the browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text. </li>
+                <bdi>Hello</bdi> World<br>
+                <bdi>الرجل القوي إيان</bdi> F9LA <br>
+            </section>
+            <section id="bdo">
+                <li><b>&lt;bdo&gt;</b> - It stands for Bi-Directional Override Element that individually treat each and every character.</li>
+                <span>LTR : </span><bdo dir="ltr">Hello World</bdo><br>
+                <span>RTL : </span><bdo dir="rtl">How Are You?</bdo>
+            </section>
+            <section id="big">
+                <li><b>&lt;big&gt; (DEPRECATED) - It used to display fonts are greater size than it's parent like : </b></li>
+                <h3>
+                    Hello
+                    <big>World</big>
+                </h3>
+            </section>
+            <section id="data">
+                <li><b>&lt;data&gt;</b> - It can be used to associate value to some text like : </li>
+                <data value="13" title="13">Vishwas</data><br>
+                <data value="39" title="39">Pranjal</data>
+            </section>
+            <section id="datalist">
+                <li><b>&lt;datalist&gt;</b> - It is used to provide pre-defined suggestions that can be directly injected to text boxes.</li>
+                <label for="data">Enter Your Browser's Name : </label>
+                <input list="data" id="data_id" name="data">
+                <datalist id="data">
+                    <option value="Chrome">Google</option>
+                    <option value="Edge">Microsoft</option>
+                    <option value="Safari">Apple</option>
+                </datalist>
+            </section>
         </ol>
     </main>
 </body>
