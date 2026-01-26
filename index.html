@@ -17,18 +17,18 @@
             font-family: 'Google Sans';
         }
 
-        table{
+        table {
             border: 2px solid black;
             border-collapse: collapse;
             text-align: center;
         }
 
-        th{
+        th {
             border: 2px solid black;
         }
 
-        #details{
-            width: 500px;
+        #details {
+            width: 600px;
         }
     </style>
 
@@ -52,7 +52,9 @@
     </header>
     <main>
         <!-- <h3>Topics Covered</h3> -->
-        <caption><center>Topics Covered</center></caption>
+        <caption>
+            <center>Topics Covered</center>
+        </caption>
         <table align="center" border="1">
             <colgroup>
                 <col>
@@ -439,19 +441,22 @@
                     <td>41.</td>
                     <td><a href="form_tags.html"><b>&lt;form&gt;</b></a></td>
                     <td>action</td>
-                    <td>Where to redirect the user upon submition path is mentioned here. <br>Possible values are : GET, POST</td>
+                    <td>Where to redirect the user upon submition path is mentioned here. <br>Possible values are : GET,
+                        POST</td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td>enctype</td>
-                    <td>What level of encryption of data is required mentioned here.  <br>Possible values are : text/plain, multipart/formdata, application/x-www-form-urlencodeed</td>
+                    <td>What level of encryption of data is required mentioned here. <br>Possible values are :
+                        text/plain, multipart/formdata, application/x-www-form-urlencodeed</td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td>method</td>
-                    <td>Using which method you have to send the form's data is mentioned here. <br>Possible values are : GET, POST, DIALOG.</td>
+                    <td>Using which method you have to send the form's data is mentioned here. <br>Possible values are :
+                        GET, POST, DIALOG.</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -536,6 +541,298 @@
                     <td><a href="body_tags.html#i"><b>&lt;i&gt;</b></a></td>
                     <td><a href="global_attributes.html">Global Attributes</b></a></td>
                     <td>Only supports global attributes.</td>
+                </tr>
+                <tr>
+                    <td>51.</td>
+                    <td><a href="misc_tags.html#iframe"><b>&lt;iframe&gt;</b></a></td>
+                    <td>allowfullscreen</td>
+                    <td>It specifies whether the content is allowed to go in full screen or not.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>loading</td>
+                    <td>Indicates when the browser should load the iframe: <br> <b>eager</b> : Immediately loads when
+                        page gets
+                        loaded. <br> <b>lazy</b> : Loads when on same calculated distance from view
+                        port.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>src</td>
+                    <td>You can define which file to load on iframe. <br> It takes path absolute or relative.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>referrerpolicy</td>
+                    <td>It allows you to define how much referrer to send when following link. <br>Possible Values :
+                        no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin,
+                        strict-origin, strict-origin-when-cross-origin, unsafe-url</td>
+                    <!-- <td>It allows you to define how much referrer to send when following link. <br> <b>no-referrer</b> :
+                        The
+                        referer header will not be sent. <br> <b>no-referrer-when-downgrade</b> : The Referer header
+                        will not be
+                        sent to origins without TLS (HTTPS). <br> <b>origin : </b>The sent referrer will be limited to
+                        the origin of the referring page: its scheme, host, and port. <br><b>strict-origin</b> : Only
+                        send the origin of the document as the referrer when the protocol security level stays the same
+                        (HTTPS→HTTPS), but don't send it to a less secure destination (HTTPS→HTTP). <br> <b>strict-origin-when-cross-origin (DEFAULT)</b> Send a full URL when performing a same-origin request, only send the origin when the protocol
+                        security level stays the same (HTTPS→HTTPS), and send no header to a less secure destination
+                        (HTTPS→HTTP).</td> -->
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>sandbox</td>
+                    <td>It controls the restrictions applied to the content embedded in iframe. <br>Possible values :
+                        allow-downloads, allow-forms, allow-modals, allow-popups etc.</td>
+                </tr>
+                <tr>
+                    <td>52.</td>
+                    <td><a href="image_tags.html"><b>&lt;img&gt;</b></a></td>
+                    <td>src</td>
+                    <td>It allows you defining absoulte or relative path to show the image.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>alt</td>
+                    <td>It allows you defining alternate text if browser fails to load the image. <br> Can also be used
+                        for Screen Readers.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>loading</td>
+                    <td>It indicates browser when to load the image : <br><b>eager</b>: It directly loads the image when
+                        page gets loaded. <br><b>lazy</b>: It only loads image when the image is at some calcuated
+                        distance from view port.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>decoding</td>
+                    <td>When to decode the image possible values <br><b>sync</b>: It decodes the image along the DOM
+                        creation. <br><b>async</b>: It decodes the image after DOM creation.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>referrerpolicy</td>
+                    <td>It allows you to define how much referrer to send when following link. <br>Possible Values :
+                        no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin,
+                        strict-origin, strict-origin-when-cross-origin, unsafe-url</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>fetchpriority</td>
+                    <td>It allows you defining relative fetch priority over other images. <br><b>high</b>: It fetches
+                        image more earlier than other images. <br>It fetches image late relative to other images.
+                        <br><b>auto</b> Browser decide on its own.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>srcset</td>
+                    <td>It allows you defining multiple images along with view width and image source.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>sizes</td>
+                    <td>Only be used if srcset is present. Defines max and min width when to load which image from srcset images.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>usemap</td>
+                    <td>Allows using map and area tags to define URLs upon image.</td>
+                </tr>
+                <tr>
+                    <td>53.</td>
+                    <td><a href="form_tags.html"><b>&lt;input&gt;</b></a></td>
+                    <td>type</td>
+                    <td>It allows defining types of input like : <br>Possible values : text,password,email,file,radio,checkbox,range,color,date, <br> month,week,time,submit,reset,button,hidden,number,tel,url.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>accept</td>
+                    <td>It is used along with type="file" that defines which files are accepted.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>autocapitalize</td>
+                    <td>Controls automatic capitalization in inputted text.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>autocomplete</td>
+                    <td>Hint for form autofill feature</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>min</td>
+                    <td>Allows defining minimum value.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>max</td>
+                    <td>Allows defining maximum value.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>minlength</td>
+                    <td>Allows defining minimum length of the characters to be entered into the input field.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>maxlength</td>
+                    <td>Allows defining maximum length of the characters entered into the input field.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>placeholder</td>
+                    <td>Allows defining placeholder to provide user idea what to enter in input field.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>pattern</td>
+                    <td>Allows defining regular expressions for the input field.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>readonly</td>
+                    <td>Doesn't allow user to make any changes just readonly text in input field.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>required</td>
+                    <td>Makes input field mandatory for user to fill it out otherwise submition will be prevented.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>step</td>
+                    <td>Can be usefull with date, time, week, month to skip certain amount to steps on input field.</td>
+                </tr>
+                <tr>
+                    <td>54.</td>
+                    <td><a href="body_tags.html#delins"><b>&lt;ins&gt;</b></a></td>
+                    <td><a href="global_attributes.html">Global Attributes</a></td>
+                    <td>Only supports global attributes.</td>
+                </tr>
+                <tr>
+                    <td>55.</td>
+                    <td><a href="body_tags.html#kbd"><b>&lt;kbd&gt;</b></a></td>
+                    <td><a href="global_attributes.html">Global Attributes</a></td>
+                    <td>Only supports global attributes.</td>
+                </tr>
+                <tr>
+                    <td>56.</td>
+                    <td><a href="form_tags.html"><b>&lt;label&gt;</b></a></td>
+                    <td>for</td>
+                    <td>It is used to map label along with the text field.</td>
+                </tr>
+                <tr>
+                    <td>57.</td>
+                    <td><a href="body_tags.html"><b>&lt;li&gt;</b></a></td>
+                    <td><a href="global_attributes.html">Global Attributes</a></td>
+                    <td>Only supports global attributes.</td>
+                </tr>
+                <tr>
+                    <td>58.</td>
+                    <td><a href="#"><b>&lt;link&gt;</b></a></td>
+                    <td>rel</td>
+                    <td>It is used to link stylesheets, icons to your webpage. <br>Possible values : preload,preconnect,prefetch,noreferrer etc.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>href</td>
+                    <td>Hypertext reference allows you to define resources to be linked.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>fetchpriority</td>
+                    <td>It allows you defining relative fetch priority over other images. <br><b>high</b>: It fetches
+                        image more earlier than other images. <br>It fetches image late relative to other images.
+                        <br><b>auto</b> Browser decide on its own.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>referrerpolicy</td>
+                    <td>It allows you to define how much referrer to send when following link. <br>Possible Values :
+                        no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin,
+                        strict-origin, strict-origin-when-cross-origin, unsafe-url</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>sizes</td>
+                    <td>It allows you to define pixel sizes of images shown as icons.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>media</td>
+                    <td>Allows to define media query if it is true then and only then media will be loaded.</td>
+                </tr>
+                <tr>
+                    <td>59.</td>
+                    <td><a href="semantics_demo.html"><b>&lt;main&gt;</b></a></td>
+                    <td><a href="global_attributes.html"><b>Global Attributes</b></a></td>
+                    <td>Only supports global attributes.</td>
+                </tr>
+                <tr>
+                    <td>60.</td>
+                    <td><a href="misc_tags.html"><b>&lt;map&gt;</b></a></td>
+                    <td>name</td>
+                    <td>Provided name must be used along with &lt;img&gt;'s attribute usemap both should me matched to work correctly.</td>
+                </tr>
+                <tr>
+                    <td>61.</td>
+                    <td><a href="semantics_demo.html"><b>&lt;main&gt;</b></a></td>
+                    <td><a href="global_attributes.html"><b>Global Attributes</b></a></td>
+                    <td>Only supports global attributes.</td>
+                </tr>
+                <tr>
+                    <td>62.</td>
+                    <td><a href="semantics_demo.html"><b>&lt;menu&gt;</b></a></td>
+                    <td><a href="global_attributes.html"><b>Global Attributes</b></a></td>
+                    <td>Only supports global attributes.</td>
+                </tr>
+                <tr>
+                    <td>63.</td>
+                    <td><a href="#"><b>&lt;meta&gt;</b></a></td>
+                    <td>name</td>
+                    <td>It is used to define title of the content we are providing. <br>Possible values : author, keyword, description, charset, viewport etc.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>content</td>
+                    <td>It contains orignal value for the name and http-equiv</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>http-equiv</td>
+                    <td>It can be used to perform re-direction</td>
                 </tr>
             </tbody>
         </table>

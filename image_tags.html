@@ -38,13 +38,13 @@
     <main>
         <figure>
             <img src="medium.jpg" srcset="./img/small.jpg 200w, ./img/medium.jpg 400w, ./img/large.jpg 600w" sizes="(max-width: 300px) 200w,
-                            (max-width: 600px) 400px, 600px" alt="Plant" loading="lazy" decoding="async"
-                fetchpriority="high" referrerpolicy="no-referrer" draggable="true">
+                            (max-width: 600px) 400px, 600px" alt="Plant" loading="lazy" decoding="sync"
+                fetchpriority="high" referrerpolicy="no-referrer" draggable="false" dropzone="">
 
             <figcaption>Responsive Image Demo Using srcset and sizes attribute of img tag</figcaption>
         </figure>
     </main>
-    <img src="../img/medium.jpg" alt="">
+    <img src="./img/medium.jpg" alt="">
     <footer align="center">
         <hr>
         <small><strong>END OF THE FILE (EOF) - Created By Vishwas Bhatt</strong></small>
