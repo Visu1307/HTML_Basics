@@ -35,7 +35,7 @@
     </header>
     <hr>
     <main>
-        <ol type="1" start="9">
+        <ol type="1" start="10">
             <section id="fence">
                 <li><b>&lt;fencedframe&gt;</b> (EXPERIMENTAL) - fencedframe is just like iframe but iframe supports the external
                     interaction while fencedframe is not supporting external interactions.</li>
@@ -60,37 +60,53 @@
             This is <ins>not</ins> blank text.
             <li><b>&lt;main&gt;</b> - Used to wrap main content of particular section or div or any other element.</li>
             This text itself has been wraped around &lt;main&gt;
-            <li><b>&lt;menu&gt;</b> - Semantic tag to define menu list like navbar which can be created using &lt;ul&gt; that can help us to navigate to different web pages.</li>
-            <menu>
-                <ul>
-                   <li><a href="extra_tags_1.html" title="Extra Tags Part-1">PREVIOUS</a></li> 
-                   <li><a href="index.html">HOME</a></li> 
-                </ul>
-            </menu>
-            <li><b>&lt;nobr&gt;</b> (DEPRECATED) - Used to define that this content will appear in single line and there would be no word or line break even if it goes out of screen also.</li>
+            <section id="menu">
+                <li><b>&lt;menu&gt;</b> - Semantic tag to define menu list like navbar which can be created using &lt;ul&gt; that can help us to navigate to different web pages.</li>
+                <menu>
+                    <ul>
+                       <li><a href="extra_tags_1.html" title="Extra Tags Part-1">PREVIOUS</a></li> 
+                       <li><a href="index.html">HOME</a></li> 
+                    </ul>
+                </menu>
+            </section>
+            <section id="nobr">
+                <li><b>&lt;nobr&gt;</b> (DEPRECATED) - Used to define that this content will appear in single line and there would be no word or line break even if it goes out of screen also.</li>
+                <nobr>
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. 
+                    Quae ullam quia, harum recusandae ut, 
+                    nostrum blanditiis vitae eius dicta nulla perspiciatis eos. Error, distinctio voluptate tenetur ut placeat atque expedita!
+                </nobr>
+            </section>
             <!-- <pre>
                 Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. 
                 Quae ullam quia, harum recusandae ut, 
                 nostrum blanditiis vitae eius dicta nulla perspiciatis eos. Error, distinctio voluptate tenetur ut placeat atque expedita!
             </pre> -->
-            <nobr>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. 
-                Quae ullam quia, harum recusandae ut, 
-                nostrum blanditiis vitae eius dicta nulla perspiciatis eos. Error, distinctio voluptate tenetur ut placeat atque expedita!
-            </nobr>
-            <li><b>&lt;rp&gt; & &lt;rt&gt;</b> - It  is used to provide fall-back parentheses for browsers that do not support display of ruby annotations using the &lt;ruby&gt; element.</li>
-            <ruby>
-                漢 <rt>kan</rt> 字 <rt>ji</rt>
-            </ruby>     
-            <li><b>&lt;s&gt;</b> - It is used show striked through text like : </li>         
-            <s>MRP : $10</s><br>
-            <b>SLP : $9</b>
+            <section id="ruby">
+                <li><b>&lt;rp&gt; & &lt;rt&gt;</b> - It  is used to provide fall-back parentheses for browsers that do not support display of ruby annotations using the &lt;ruby&gt; element.</li>
+                <ruby>
+                    漢 <rt>kan</rt> 字 <rt>ji</rt>
+                </ruby>     
+            </section>
+            <section id="s">
+                <li><b>&lt;s&gt;</b> - It is used show striked through text like : </li>         
+                <s>MRP : $10</s><br>
+                <b>SLP : $9</b>
+            </section>
             <section id="canvas">
                 <li><b>&lt;canvas&gt;</b> - You can draw shapes and use colors inside this tag using JavaScript.</li>
                 <canvas width="200px" height="200px">
                 </canvas>
+            </section>
+            <section id="temp">
+                <template id="productrow">
+                    <tr>
+                      <td class="record"></td>
+                      <td></td>
+                    </tr>
+                </template>
             </section>
         </ol>
     </main>

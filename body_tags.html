@@ -30,7 +30,7 @@
 <body>
     <header>
         <hgroup>
-            <h1>2. Introduction to body tags</h1>
+            <h1>Introduction to body tags</h1>
             <section id="button">
                 <a href="html_intro.html"><button>&#8592; PREVIOUS</button></a>
                 <a href="index.html"><button>HOME</button></a>
@@ -45,25 +45,35 @@
                 <li>Block Elements</li>
             </h2>
         </ul>
-        <h4>
-            <p>These elements occupies whole width of the web page.<br />
-                All Content written inside these tags always comes into new line.</p>
-        </h4>
+        <section id="p">
+            <h4>
+                <p>These elements occupies whole width of the web page.<br />
+                    All Content written inside these tags always comes into new line.</p>
+            </h4>
+        </section>
         <ul type="square">
             <section id="headings">
                 <li>Heading Tags like <b>&lt;h1&gt; to &lt;h6&gt;</b></li>
             </section>
             <li><b>&lt;p&gt;</b> Tag used for paragraph</li>
+            <section id="span">
+                <li><b>&lt;span&gt;</b> Tag used for creating an inline container.</li>
+                <span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, aperiam iste. Vero doloribus laudantium a aperiam nihil, excepturi quisquam, alias assumenda commodi ducimus sunt quo nisi corporis incidunt. Tempora, in?
+                </span>
+            </section>
             <section id="brhr">
                 <li><b>&lt;br/&gt; & &lt;hr/&gt;</b> used for breaking row and providing horizantal row</li>
             </section>
-            <li><b>&lt;pre&gt;</b> for pre-formatted text like
-                <pre>
-                    Hello ,     How Are You?
-                    I am Fine   
-                        Thank You!
-                </pre>
-            </li>
+            <section id="pre">
+                <li><b>&lt;pre&gt;</b> for pre-formatted text like
+                    <pre>
+                        Hello ,     How Are You?
+                        I am Fine   
+                            Thank You!
+                    </pre>
+                </li>
+            </section>
             <section id="blockquote">
                 <li>
                     <b>&lt;q&gt;</b> for inline quotations and <b>&lt;blockqoute&gt;</b> for long quotations.<br />
@@ -94,10 +104,12 @@
                 <section id="b">
                     <li><b>&lt;b&gt;</b> - Used to bold the text</li>
                 </section>
-                <li><b>&lt;strong&gt;</b> - Bolds text as well as strong semantic meaning used for SEO optimization.
-                </li>
-                <b>Bold HTML's</b><br>
-                <strong>Strong DEMO</strong><br>
+                <section id="strong">
+                    <li><b>&lt;strong&gt;</b> - Bolds text as well as strong semantic meaning used for SEO optimization.
+                    </li>
+                    <b>Bold HTML's</b><br>
+                    <strong>Strong DEMO</strong><br>
+                </section>
                 <section id="i">
                     <li><b>&lt;i&gt;</b> - Idiomatic tag used to make italic texts.</li>
                     <i>Idiomatic Vishwas</i><br>
@@ -107,8 +119,10 @@
                         etc.</li>
                     <em>Emphasized Bhatt</em>
                 </section>
-                <li><b>&lt;u&gt;</b> - Used for unarticulated text which creates underline on the text.</li>
-                <u>Underlined text demo</u>
+                <section id="u">
+                    <li><b>&lt;u&gt;</b> - Used for unarticulated text which creates underline on the text.</li>
+                    <u>Underlined text demo</u>
+                </section>
                 <li><b>&lt;s&gt;</b> - Just strikethrough the text nothing else.</li>
                 <section id="delins">
                     <li><b>&lt;del&gt;</b> & <b>&lt;ins&gt;</b> - Also strikethrough the text as well as semantic
@@ -122,15 +136,25 @@
                         console.log("Hello World");
                     </code>
                 </section>
-                <li><b>&lt;var&gt;</b> - It is used to provide variable values to show user in monospace text.</li>
-                <var>x=5;<br />y=10;<br />z=x+y;</var>
-                <li><b>&lt;samp&gt;</b> - It is used to print sample output in monospace fonts.</li>
-                <small>OUTPUT</small><br />
-                <samp>
-                    ERROR - File Not Found Error
-                </samp>
-                <li><b>&lt;small&gt;</b> - It is used to print small text like copyright and license etc.</li>
-                <small>All Rights Reserved.</small>
+                <section id="var">
+                    <li><b>&lt;var&gt;</b> - It is used to provide variable values to show user in monospace text.</li>
+                    <var>x=5;<br />y=10;<br />z=x+y;</var>
+                </section>
+                <section id="op">
+                    <li><b>&lt;output&gt;</b> - It is used to print sample output in monospace fonts.</li>
+                    <output>OUTPUT</output><br />
+                </section>
+                <section id="samp">
+                    <li><b>&lt;samp&gt;</b> - It is used to print sample output in monospace fonts.</li>
+                    <small>OUTPUT</small><br />
+                    <samp>
+                        ERROR - File Not Found Error
+                    </samp>
+                </section>
+                <section id="small">
+                    <li><b>&lt;small&gt;</b> - It is used to print small text like copyright and license etc.</li>
+                    <small>All Rights Reserved.</small>
+                </section>
                 <section id="kbd">
                     <li><b>&lt;kbd&gt;</b> - It is used to show keyboard shortcuts to users like:</li>
                     <kbd>CTRL + C</kbd>
@@ -147,9 +171,11 @@
                         Phone Number : 9106533108
                     </address>
                 </section>
-                <li><b>&lt;sub&gt; & &lt;sup&gt;</b> - Used to provide polynomial degree to numbers or base number also
-                    using sub.</li>
-                E=MC<sup>2</sup> OR H<sub>2</sub>O
+                <section id="subsup">
+                    <li><b>&lt;sub&gt; & &lt;sup&gt;</b> - Used to provide polynomial degree to numbers or base number also
+                        using sub.</li>
+                    E=MC<sup>2</sup> OR H<sub>2</sub>O
+                </section>
                 <section id="dfn">
                     <li><b>&lt;dfn&gt;</b> - Used to provide defination of any particular topic.</li>
                     <dfn>HTML</dfn> : It can be used to create basic static web pages.
@@ -162,6 +188,9 @@
                         <a href="test.html" download>DOWNLOAD</a><br />
                         <a href="mailto:vishwas.b@rkitsoftware.com">MAIL ME</a><br />
                         <a href="tel:9106533108">CALL ME</a>
+                </section>
+                <section id="time">
+                    <time datetime="2004-07-13">July 13</time>
                 </section>
                 <section id="dldtdd">
                     <li><b>&lt;dl&gt;</b> - description list is used to create list header.</li>
@@ -182,13 +211,15 @@
                         <dd>Provides dynamic approach towards static page.</dd>
                     </dl>
                 </section>
-                <li><b>&lt;ol&gt; & &lt;ul&gt;</b> - It is used to create ordered & unordered lists which we are
-                    currently using.</li>
-                <li>In <b>&lt;ol&gt;</b> we can start from any number using start attribute.</li>
-                <ol type="1" start="13">
-                    <li>HELLO</li>
-                    <li>WORLD</li>
-                </ol>
+                <section id="olul">
+                    <li><b>&lt;ol&gt; & &lt;ul&gt;</b> - It is used to create ordered & unordered lists which we are
+                        currently using.</li>
+                    <li>In <b>&lt;ol&gt;</b> we can start from any number using start attribute.</li>
+                    <ol type="1" start="13">
+                        <li>HELLO</li>
+                        <li>WORLD</li>
+                    </ol>
+                </section>
             </ul>
         </ul>
     </main>

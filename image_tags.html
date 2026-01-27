@@ -29,7 +29,7 @@
 
 <body>
     <header>
-        <h1>3. Image Tag</h1>
+        <h1>Image Tag</h1>
         <a href="body_tags.html"><button>&#8592; PREVIOUS</button></a>
         <a href="index.html"><button>HOME</button></a>
         <a href="media_tags.html"><button>NEXT &#8594;</button></a>
@@ -42,9 +42,17 @@
                 fetchpriority="high" referrerpolicy="no-referrer" draggable="false" dropzone="">
 
             <figcaption>Responsive Image Demo Using srcset and sizes attribute of img tag</figcaption>
-        </figure>
+        </figure><br>
+        <section id="pic">
+            <picture>
+                <source 
+                srcset="./img/small.jpg 300w, ./img/medium.jpg 600w" 
+                sizes="(max-width: 400px) 300px, (max-width: 800px) 600px, 800px"
+                type="image/jpg">
+                <img src="./img/large.jpg" alt="Large Image">
+            </picture>
+        </section>
     </main>
-    <img src="./img/medium.jpg" alt="">
     <footer align="center">
         <hr>
         <small><strong>END OF THE FILE (EOF) - Created By Vishwas Bhatt</strong></small>
