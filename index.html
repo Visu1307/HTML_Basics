@@ -13,7 +13,9 @@
         content="This is the HTML Demo which shows basic usage of all elements and attributes that we learned so far.">
 
     <style>
-        body {
+        
+        body, html {
+            scroll-behavior: smooth !important;
             font-family: 'Google Sans';
         }
 
@@ -30,6 +32,39 @@
         #details {
             width: 600px;
         }
+
+        #top{
+            height: 100px;
+            width: 100px;
+            /* border-radius: 50%; */
+            background-color: black;
+            position: fixed;
+            bottom: 50px;
+            left: 50px;
+            display: grid;
+            place-items: center;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        #down{
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            /* border-radius: 50%; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
     </style>
 
     <link rel="shortcut icon" href="./img/graduation-cap.png" type="image/x-icon">
@@ -40,20 +75,26 @@
         href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
         rel="stylesheet">
 
-    <meta http-equiv="refresh" content="120">
+    <!-- <meta http-equiv="refresh" content="3;https://www.google.com/"> -->
 
     <!-- <script></script> -->
 
 </head>
 
-<body>
+<body id="temp">
     <header align="center">
         <h1><img src="./img/graduation-cap.png" alt=""> <u>Learning HTML</u></h1>
     </header>
     <main>
+        <div id="top">
+            <a href="#temp">Top &#8593;</a>
+        </div>
+        <div id="down">
+            <a href="#temp_d">Down &#8595;</a>
+        </div>
         <!-- <h3>Topics Covered</h3> -->
         <caption>
-            <center>Topics Covered</center>
+            <center>Tags & Attributes Covered</center>
         </caption>
         <table align="center" border="1">
             <colgroup>
@@ -72,32 +113,24 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>1.</td>
-                    <td><a href="body_tags.html#anchor"><b>&lt;a&gt;</b></a></td>
+                    <td rowspan="5">1.</td>
+                    <td rowspan="5"><a href="body_tags.html#anchor"><b>&lt;a&gt;</b></a></td>
                     <td>href</td>
                     <td>It allows defining destination file URL.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>target</td>
                     <td>It defines that where to open the page. <br>Possilbe Values : _self, _blank, _parent, _top</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>download</td>
                     <td>Allows downloading file by clicking on displayed hypertext.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>ping</td>
                     <td>When link is followed the browser will send POST requests to mentioned URLs.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>referrerpolicy</td>
                     <td>It allows you to define how much referrer to send when following link.</td>
                 </tr>
@@ -114,38 +147,28 @@
                     <td>Only supports global attributes.</td>
                 </tr>
                 <tr>
-                    <td>4.</td>
-                    <td><a href="misc_tags.html#map"><b>&lt;area&gt;</b></a></td>
+                    <td rowspan="6">4.</td>
+                    <td rowspan="6"><a href="misc_tags.html#map"><b>&lt;area&gt;</b></a></td>
                     <td>coords</td>
                     <td>Used to provide co-ordinates in the image to redirection.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>shapes</td>
                     <td>Used to provide shape of the co-ordinates like circle, poly, and square.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>download</td>
                     <td>Allows downloading file by clicking on co-ordinated shapes.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>ping</td>
                     <td>When link is followed the browser will send POST requests to mentioned URLs.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>referrerpolicy</td>
                     <td>It allows you to define how much referrer to send when following link.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>target</td>
                     <td>It defines that where to open the page. <br>Possilbe Values : _self, _blank, _parent, _top</td>
                 </tr>
@@ -162,26 +185,20 @@
                     <td>Only supports global attributes.</td>
                 </tr>
                 <tr>
-                    <td>7.</td>
-                    <td><a href="media_tags.html"><b>&lt;audio&gt;</b></a></td>
+                    <td rowspan="4">7.</td>
+                    <td rowspan="4"><a href="media_tags.html"><b>&lt;audio&gt;</b></a></td>
                     <td>autoplay</td>
                     <td>Allows playing audio when page loads.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>controls</td>
                     <td>It provides user controls to play, pause, change track etc. to user.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>loop</td>
                     <td>Allows playing media in loop manner that repeats until stopped.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>muted</td>
                     <td>If given the default muted otherwise got played automatically.</td>
                 </tr>
@@ -192,14 +209,12 @@
                     <td>Only supports global attributes.</td>
                 </tr>
                 <tr>
-                    <td>9.</td>
-                    <td><a href="extra_tags_1.html#base"><b>&lt;base&gt;</b></a></td>
+                    <td rowspan="2">9.</td>
+                    <td rowspan="2"><a href="extra_tags_1.html#base"><b>&lt;base&gt;</b></a></td>
                     <td>href</td>
                     <td>It allows defining destination file URL.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>target</td>
                     <td>It defines that where to open the page. <br>Possilbe Values : _self, _blank, _parent, _top</td>
                 </tr>
@@ -219,7 +234,7 @@
                     <td>12.</td>
                     <td><a href="extra_tags_1.html#big"><b>&lt;big&gt;</b></a></td>
                     <td><a href="global_attributes.html">Global Attributes</b></a></td>
-                    <td>Only supports global attributes (DEPRECATED).</td>
+                    <td>Only supports global attributes <mark>(DEPRECATED)</mark>.</td>
                 </tr>
                 <tr>
                     <td>13.</td>
@@ -240,38 +255,28 @@
                     <td>Only supports global attributes.</td>
                 </tr>
                 <tr>
-                    <td>16.</td>
-                    <td><a href="body_tags.html#button"><b>&lt;button&gt;</b></a></td>
+                    <td rowspan="6">16.</td>
+                    <td rowspan="6"><a href="body_tags.html#button"><b>&lt;button&gt;</b></a></td>
                     <td>autofocus</td>
                     <td>Automatically focuses on given element when page loads.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>formaction</td>
                     <td>Allows specifying form action when defined inside &lt;form&gt;</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>formenctype</td>
                     <td>Allows specifying form encryption type when defined inside &lt;form&gt;</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>formmethod</td>
                     <td>Allows specifying form method when defined inside &lt;form&gt;</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>formtarget</td>
                     <td>Allows specifying form target when defined inside &lt;form&gt;</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td><a href="global_attributes.html#pop"><b>&lt;popovertarget&gt;</b></a></td>
                     <td>Allows creating an popover displayed in the screen.</td>
                 </tr>
@@ -297,7 +302,7 @@
                     <td>19.</td>
                     <td><a href="#"><b>&lt;center&gt;</b></a></td>
                     <td>No Attributes</td>
-                    <td>Center each and everything wrapped inside this tag (DEPRECATED).</td>
+                    <td>Center each and everything wrapped inside this tag <mark>(DEPRECATED)</mark>.</td>
                 </tr>
                 <tr>
                     <td>20.</td>
@@ -387,7 +392,7 @@
                     <td>34.</td>
                     <td><a href="global_attributes.html#pop"><b>&lt;div&gt;</b></a></td>
                     <td>align</td>
-                    <td>Used to align the items wrapped inside the &lt;tag&gt; (DEPRECATED).</td>
+                    <td>Used to align the items wrapped inside the &lt;tag&gt; <mark>(DEPRECATED)</mark>.</td>
                 </tr>
                 <tr>
                     <td>35.</td>
@@ -396,14 +401,12 @@
                     <td>Only supports global attributes.</td>
                 </tr>
                 <tr>
-                    <td>36.</td>
-                    <td><a href="svg_demo.html#embed"><b>&lt;embed&gt;</b></a></td>
+                    <td rowspan="2">36.</td>
+                    <td rowspan="2"><a href="svg_demo.html#embed"><b>&lt;embed&gt;</b></a></td>
                     <td>src</td>
                     <td>Provide the path of item to be embedded with web page.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>type</td>
                     <td>Here you have to provide MIME type.</td>
                 </tr>
@@ -411,7 +414,7 @@
                     <td>37.</td>
                     <td><a href="extra_tags_2.html#fence"><b>&lt;fencedframe&gt;</b></a></td>
                     <td>allow</td>
-                    <td>Specifies a Permissions Policy for the &lt;fencedframe&gt; (EXPERIMENTAL)</td>
+                    <td>Specifies a Permissions Policy for the &lt;fencedframe&gt; <mark>(EXPERIMENTAL)</mark></td>
                 </tr>
                 <tr>
                     <td>37.</td>
@@ -438,59 +441,47 @@
                     <td>Only supports global attributes.</td>
                 </tr>
                 <tr>
-                    <td>41.</td>
-                    <td><a href="form_tags.html"><b>&lt;form&gt;</b></a></td>
+                    <td rowspan="5">41.</td>
+                    <td rowspan="5"><a href="form_tags.html"><b>&lt;form&gt;</b></a></td>
                     <td>action</td>
                     <td>Where to redirect the user upon submition path is mentioned here. <br>Possible values are : GET,
                         POST</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>enctype</td>
                     <td>What level of encryption of data is required mentioned here. <br>Possible values are :
                         text/plain, multipart/formdata, application/x-www-form-urlencodeed</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>method</td>
                     <td>Using which method you have to send the form's data is mentioned here. <br>Possible values are :
                         GET, POST, DIALOG.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>novalidate</td>
                     <td>Used to ignore all the below mentioned validations.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>target</td>
                     <td>It defines that where to open the page. <br>Possilbe Values : _self, _blank, _parent, _top</td>
                 </tr>
                 <tr>
-                    <td>42.</td>
-                    <td><a href="extra_tags_2.html#frame"><b>&lt;frame&gt;</b></a></td>
+                    <td rowspan="2">42.</td>
+                    <td rowspan="2"><a href="extra_tags_2.html#frame"><b>&lt;frame&gt;</b></a></td>
                     <td>src</td>
                     <td>This attribute specifies document that will be displayed by the frame.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>noresize</td>
-                    <td>Doesn't allow resizing frame (DEPRECATED).</td>
+                    <td>Doesn't allow resizing frame <mark>(DEPRECATED)</mark>.</td>
                 </tr>
                 <tr>
-                    <td>43.</td>
-                    <td><a href="extra_tags_2.html#frame"><b>&lt;frameset&gt;</b></a></td>
+                    <td rowspan="2">43.</td>
+                    <td rowspan="2"><a href="extra_tags_2.html#frame"><b>&lt;frameset&gt;</b></a></td>
                     <td>cols</td>
                     <td>This attribute specifies columns that will be displayed by the frameset.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>rows</td>
                     <td>This attribute specifies rows that will be displayed by the frameset.</td>
                 </tr>
@@ -525,16 +516,14 @@
                     <td>Only supports global attributes.</td>
                 </tr>
                 <tr>
-                    <td>49.</td>
-                    <td><a href="#"><b>&lt;html&gt;</b></a></td>
+                    <td rowspan="2">49.</td>
+                    <td rowspan="2"><a href="#"><b>&lt;html&gt;</b></a></td>
                     <td>lang</td>
                     <td>Allows defining language of webpage in ISO specified two character language code.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>xmlns</td>
-                    <td>Used to specify the XML Namespace (DEPRECATED).</td>
+                    <td>Used to specify the XML Namespace <mark>(DEPRECATED)</mark>.</td>
                 </tr>
                 <tr>
                     <td>50.</td>
@@ -543,14 +532,12 @@
                     <td>Only supports global attributes.</td>
                 </tr>
                 <tr>
-                    <td>51.</td>
-                    <td><a href="misc_tags.html#iframe"><b>&lt;iframe&gt;</b></a></td>
+                    <td rowspan="5">51.</td>
+                    <td rowspan="5"><a href="misc_tags.html#iframe"><b>&lt;iframe&gt;</b></a></td>
                     <td>allowfullscreen</td>
                     <td>It specifies whether the content is allowed to go in full screen or not.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>loading</td>
                     <td>Indicates when the browser should load the iframe: <br> <b>eager</b> : Immediately loads when
                         page gets
@@ -558,14 +545,10 @@
                         port.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>src</td>
                     <td>You can define which file to load on iframe. <br> It takes path absolute or relative.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>referrerpolicy</td>
                     <td>It allows you to define how much referrer to send when following link. <br>Possible Values :
                         no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin,
@@ -582,149 +565,107 @@
                         (HTTPS→HTTP).</td> -->
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>sandbox</td>
                     <td>It controls the restrictions applied to the content embedded in iframe. <br>Possible values :
                         allow-downloads, allow-forms, allow-modals, allow-popups etc.</td>
                 </tr>
                 <tr>
-                    <td>52.</td>
-                    <td><a href="image_tags.html"><b>&lt;img&gt;</b></a></td>
+                    <td rowspan="9">52.</td>
+                    <td rowspan="9"><a href="image_tags.html"><b>&lt;img&gt;</b></a></td>
                     <td>src</td>
                     <td>It allows you defining absoulte or relative path to show the image.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>alt</td>
                     <td>It allows you defining alternate text if browser fails to load the image. <br> Can also be used
                         for Screen Readers.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>loading</td>
                     <td>It indicates browser when to load the image : <br><b>eager</b>: It directly loads the image when
                         page gets loaded. <br><b>lazy</b>: It only loads image when the image is at some calcuated
                         distance from view port.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>decoding</td>
                     <td>When to decode the image possible values <br><b>sync</b>: It decodes the image along the DOM
                         creation. <br><b>async</b>: It decodes the image after DOM creation.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>referrerpolicy</td>
                     <td>It allows you to define how much referrer to send when following link. <br>Possible Values :
                         no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin,
                         strict-origin, strict-origin-when-cross-origin, unsafe-url</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>fetchpriority</td>
                     <td>It allows you defining relative fetch priority over other images. <br><b>high</b>: It fetches
                         image more earlier than other images. <br>It fetches image late relative to other images.
                         <br><b>auto</b> Browser decide on its own.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>srcset</td>
                     <td>It allows you defining multiple images along with view width and image source.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>sizes</td>
                     <td>Only be used if srcset is present. Defines max and min width when to load which image from srcset images.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>usemap</td>
                     <td>Allows using map and area tags to define URLs upon image.</td>
                 </tr>
                 <tr>
-                    <td>53.</td>
-                    <td><a href="form_tags.html"><b>&lt;input&gt;</b></a></td>
+                    <td rowspan="13">53.</td>
+                    <td rowspan="13"><a href="form_tags.html"><b>&lt;input&gt;</b></a></td>
                     <td>type</td>
                     <td>It allows defining types of input like : <br>Possible values : text,password,email,file,radio,checkbox,range,color,date, <br> month,week,time,submit,reset,button,hidden,number,tel,url.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>accept</td>
                     <td>It is used along with type="file" that defines which files are accepted.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>autocapitalize</td>
                     <td>Controls automatic capitalization in inputted text.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>autocomplete</td>
                     <td>Hint for form autofill feature</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>min</td>
                     <td>Allows defining minimum value.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>max</td>
                     <td>Allows defining maximum value.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>minlength</td>
                     <td>Allows defining minimum length of the characters to be entered into the input field.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>maxlength</td>
                     <td>Allows defining maximum length of the characters entered into the input field.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>placeholder</td>
                     <td>Allows defining placeholder to provide user idea what to enter in input field.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>pattern</td>
                     <td>Allows defining regular expressions for the input field.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>readonly</td>
                     <td>Doesn't allow user to make any changes just readonly text in input field.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>required</td>
                     <td>Makes input field mandatory for user to fill it out otherwise submition will be prevented.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>step</td>
                     <td>Can be usefull with date, time, week, month to skip certain amount to steps on input field.</td>
                 </tr>
@@ -753,42 +694,32 @@
                     <td>Only supports global attributes.</td>
                 </tr>
                 <tr>
-                    <td>58.</td>
-                    <td><a href="#"><b>&lt;link&gt;</b></a></td>
+                    <td rowspan="6">58.</td>
+                    <td rowspan="6"><a href="#"><b>&lt;link&gt;</b></a></td>
                     <td>rel</td>
                     <td>It is used to link stylesheets, icons to your webpage. <br>Possible values : preload,preconnect,prefetch,noreferrer etc.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>href</td>
                     <td>Hypertext reference allows you to define resources to be linked.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>fetchpriority</td>
                     <td>It allows you defining relative fetch priority over other images. <br><b>high</b>: It fetches
                         image more earlier than other images. <br>It fetches image late relative to other images.
                         <br><b>auto</b> Browser decide on its own.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>referrerpolicy</td>
                     <td>It allows you to define how much referrer to send when following link. <br>Possible Values :
                         no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin,
                         strict-origin, strict-origin-when-cross-origin, unsafe-url</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>sizes</td>
                     <td>It allows you to define pixel sizes of images shown as icons.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>media</td>
                     <td>Allows to define media query if it is true then and only then media will be loaded.</td>
                 </tr>
@@ -817,50 +748,38 @@
                     <td>Only supports global attributes.</td>
                 </tr>
                 <tr>
-                    <td>63.</td>
-                    <td><a href="#"><b>&lt;meta&gt;</b></a></td>
+                    <td rowspan="3">63.</td>
+                    <td rowspan="3"><a href="#"><b>&lt;meta&gt;</b></a></td>
                     <td>name</td>
                     <td>It is used to define title of the content we are providing. <br>Possible values : author, keyword, description, charset, viewport etc.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>content</td>
                     <td>It contains orignal value for the name and http-equiv</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>http-equiv</td>
                     <td>It can be used to perform re-direction or refresh page on fixed time intervals.</td>
                 </tr>
                 <tr>
-                    <td>64.</td>
-                    <td><a href="form_tags.html"><b>&lt;meter&gt;</b></a></td>
+                    <td rowspan="5">64.</td>
+                    <td rowspan="5"><a href="form_tags.html"><b>&lt;meter&gt;</b></a></td>
                     <td>min</td>
                     <td>It is used to specify minimum allowed value.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>max</td>
                     <td>It is used to specify maximum allowed value.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>low</td>
                     <td>Used to define low value which is shown in red color.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>optimum</td>
                     <td>Used to define optimum value which is showin in green color.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td>high</td>
                     <td>Used to define high value which is showin in yellow color.</td>
                 </tr>
@@ -874,7 +793,7 @@
                     <td>66.</td>
                     <td><a href="extra_tags_2.html#nobr"><b>&lt;nobr&gt;</b></a></td>
                     <td><a href="global_attributes.html"><b>Global Attributes</b></a></td>
-                    <td>Only supports global attributes. (DEPRECATED)</td>
+                    <td>Only supports global attributes. <mark>(DEPRECATED)</mark></td>
                 </tr>
                 <tr>
                     <td>67.</td>
@@ -890,20 +809,16 @@
                 </tr>
             </tbody>
             <tr>
-                <td>69.</td>
-                <td><a href="body_tags.html#olul"><b>&lt;ol&gt;</b></a></td>
+                <td rowspan="3">69.</td>
+                <td rowspan="3"><a href="body_tags.html#olul"><b>&lt;ol&gt;</b></a></td>
                 <td>reversed</td>
                 <td>It specifies that list items are reversed in order.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>start</td>
                 <td>It specifies that list numbers start from which number.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>type</td>
                 <td>It allows you to create different types of lists like : <br>Possible values : A,a,i,I,1</td>
             </tr>
@@ -914,20 +829,16 @@
                 <td>It is used to mention the label of the option group that has been created.</td>
             </tr>
             <tr>
-                <td>71.</td>
-                <td><a href="form_tags.html"><b>&lt;option&gt;</b></a></td>
+                <td rowspan="3">71.</td>
+                <td rowspan="3"><a href="form_tags.html"><b>&lt;option&gt;</b></a></td>
                 <td>label</td>
                 <td>Displayed on screen, if no label the value is displayed.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>selected</td>
                 <td>Boolean attribute shows the selected option.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>value</td>
                 <td>What values should be passed on to backed when form submitted is mentioned here.</td>
             </tr>
@@ -956,14 +867,12 @@
                 <td>Only supports global attributes.</td>
             </tr>
             <tr>
-                <td>76.</td>
-                <td><a href="form_tags.html"><b>&lt;progress&gt;</b></a></td>
+                <td rowspan="2">76.</td>
+                <td rowspan="2"><a href="form_tags.html"><b>&lt;progress&gt;</b></a></td>
                 <td>max</td>
                 <td>Defines the max value of progress bar.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>value</td>
                 <td>Defines the actual value of progress bar.</td>
             </tr>
@@ -1004,26 +913,20 @@
                 <td>Only supports global attributes.</td>
             </tr>
             <tr>
-                <td>83.</td>
-                <td><a href="#"><b>&lt;script&gt;</b></a></td>
+                <td rowspan="4">83.</td>
+                <td rowspan="4"><a href="#"><b>&lt;script&gt;</b></a></td>
                 <td>defer</td>
                 <td>Boolean attribute specifies that script should be executed after document parsing.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>blocking</td>
                 <td>It blocks certain operations until the script has been executed.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>async</td>
                 <td>It executes script and parse document parallely.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>src</td>
                 <td>If the JS should be embedded the path should be given here.</td>
             </tr>
@@ -1040,14 +943,12 @@
                 <td>Only supports global attributes.</td>
             </tr>
             <tr>
-                <td>86.</td>
-                <td><a href="form_tags.html"><b>&lt;select&gt;</b></a></td>
+                <td rowspan="2">86.</td>
+                <td rowspan="2"><a href="form_tags.html"><b>&lt;select&gt;</b></a></td>
                 <td>multiple</td>
                 <td>Allows selecting multiple values from list using <kbd>CTRL + Selection</kbd>.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>size</td>
                 <td>Specifies the size of dropdown deafult 0.</td>
             </tr>
@@ -1058,32 +959,24 @@
                 <td>Only supports global attributes.</td>
             </tr>
             <tr>
-                <td>88.</td>
-                <td><a href="media_tags.html"><b>&lt;source&gt;</b></a></td>
+                <td rowspan="5">88.</td>
+                <td rowspan="5"><a href="media_tags.html"><b>&lt;source&gt;</b></a></td>
                 <td>src</td>
                 <td>Defines the absolute or relative path of the media element.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>srcset</td>
                 <td>Allows defining multiple sources for single element changes according to responsiveness.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>media</td>
                 <td>Used to provide media query for intended media.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>sizes</td>
                 <td>Used to provide different sizes when multiple images embedded using this tag.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>type</td>
                 <td>MIME type has to be mentioned along with each source tag.</td>
             </tr>
@@ -1100,14 +993,12 @@
                 <td>Only supports global attributes.</td>
             </tr>
             <tr>
-                <td>91.</td>
-                <td><a href="#"><b>&lt;style&gt;</b></a></td>
+                <td rowspan="2">91.</td>
+                <td rowspan="2"><a href="#"><b>&lt;style&gt;</b></a></td>
                 <td>blocking</td>
                 <td>It blocks certain operations until the script has been executed.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>media</td>
                 <td>Used to provide media query for intended media.</td>
             </tr>
@@ -1130,34 +1021,26 @@
                 <td>Only supports global attributes.</td>
             </tr>
             <tr>
-                <td>95.</td>
-                <td><a href="table_tags.html"><b>&lt;table&gt;</b></a></td>
+                <td rowspan="5">95.</td>
+                <td rowspan="5"><a href="table_tags.html"><b>&lt;table&gt;</b></a></td>
                 <td>border</td>
-                <td>Provides border thickness. (DEPRECATED)</td>
+                <td>Provides border thickness. <mark> <mark>(DEPRECATED)</mark> </mark></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>align</td>
-                <td>Provides alignment of whole table. (DEPRECATED)</td>
+                <td>Provides alignment of whole table. <mark> <mark>(DEPRECATED)</mark> </mark></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>bgcolor</td>
-                <td>Provides background color of whole table. (DEPRECATED)</td>
+                <td>Provides background color of whole table. <mark> <mark>(DEPRECATED)</mark> </mark></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>cellpadding</td>
-                <td>Provides space between content and cells of border of whole table. (DEPRECATED)</td>
+                <td>Provides space between content and cells of border of whole table. <mark> <mark>(DEPRECATED)</mark> </mark></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>align</td>
-                <td>Provides space between two cells of whole table. (DEPRECATED)</td>
+                <td>Provides space between two cells of whole table. <mark>(DEPRECATED)</mark></td>
             </tr>
             <tr>
                 <td>96.</td>
@@ -1196,50 +1079,38 @@
                 <td>Only supports global attributes.</td>
             </tr>
             <tr>
-                <td>102.</td>
-                <td><a href="table_tags.html"><b>&lt;template&gt;</b></a></td>
+                <td rowspan="3">102.</td>
+                <td rowspan="3"><a href="table_tags.html"><b>&lt;template&gt;</b></a></td>
                 <td>shadowrootmode</td>
                 <td>Creates a shadow root for the parent element. <br>Possible values : open,closed</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>shadowrootclonable</td>
                 <td>Sets the value of the clonable property of a ShadowRoot created using this element to true</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>shadowrootserializable</td>
                 <td>Sets the value of the serializable property of a ShadowRoot created using this element to true</td>
             </tr>
             <tr>
-                <td>103.</td>
-                <td><a href="form_tags.html"><b>&lt;textarea&gt;</b></a></td>
+                <td rowspan="5">103.</td>
+                <td rowspan="5"><a href="form_tags.html"><b>&lt;textarea&gt;</b></a></td>
                 <td>cols</td>
                 <td>Defines the textarea's columns.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>rows</td>
                 <td>Defines the textarea's rows.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>required</td>
                 <td>Makes it mandatory to fill by user.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>readonly</td>
                 <td>Unlike the disabled attribute, the readonly attribute does not prevent the user from clicking or selecting in the control.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>wrap</td>
                 <td>Indicates how the control should wrap the value for form submission. <br> Possible values are: hard, soft, off.</td>
             </tr>
@@ -1280,44 +1151,32 @@
                 <td>Only supports global attributes.</td>
             </tr>
             <tr>
-                <td>110.</td>
-                <td><a href="media_tags.html"><b>&lt;video&gt;</b></a></td>
+                <td rowspan="7">110.</td>
+                <td rowspan="7"><a href="media_tags.html"><b>&lt;video&gt;</b></a></td>
                 <td>controls</td>
                 <td>Provides user control to play/pause download maximize etc.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>muted</td>
                 <td>When video loads default voice is muted.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>loop</td>
                 <td>When video got ended it iterates back to start and automatically played again.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>autoplay</td>
                 <td>When page loads the video gets automatically played.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>poster</td>
                 <td>A URL of an image written here and shown when video is downloading.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>disablepictureinpicture</td>
                 <td>Doesn't allows browser to display video in picture-in-picture mode by browsers.</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
                 <td>disableremoteplayback</td>
                 <td>It denies mirroring video from wired technologies like HDMI as well as wireless technologies like Miracast, Chromecast etc.</td>
             </tr>
@@ -1348,7 +1207,7 @@
             </ol>
         </nav> -->
     </main>
-    <footer align="center">
+    <footer id="temp_d" align="center">
         <hr>
         <small><strong>END OF THE FILE (EOF) - Created By Vishwas Bhatt</strong></small>
         <hr>

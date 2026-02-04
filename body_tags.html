@@ -16,6 +16,9 @@
         body {
             font-family: 'Google Sans';
         }
+        *{
+            scroll-behavior: smooth !important;
+        }
     </style>
 
     <link rel="shortcut icon" href="./img/graduation-cap.png" type="image/x-icon">
@@ -32,9 +35,7 @@
         <hgroup>
             <h1>Introduction to body tags</h1>
             <section id="button">
-                <a href="html_intro.html"><button>&#8592; PREVIOUS</button></a>
-                <a href="index.html"><button>HOME</button></a>
-                <a href="image_tags.html"><button>NEXT &#8594;</button></a>
+                <a href="index.html"><button>&#8592; HOME</button></a>
             </section>
         </hgroup>
     </header>
@@ -51,7 +52,7 @@
                     All Content written inside these tags always comes into new line.</p>
             </h4>
         </section>
-        <ul type="square">
+        <ul type="square" id="temp">
             <section id="headings">
                 <li>Heading Tags like <b>&lt;h1&gt; to &lt;h6&gt;</b></li>
             </section>
@@ -225,7 +226,12 @@
     </main>
     <footer align="center">
         <hr>
-        <small><strong>END OF THE FILE (EOF) - Created By Vishwas Bhatt</strong></small>
+        <small><strong>
+        <a href="#top">
+
+            END OF THE FILE (EOF) - Created By Vishwas Bhatt
+        </a>
+        </strong></small>
         <hr>
     </footer>
 </body>
